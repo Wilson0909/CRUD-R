@@ -1,0 +1,35 @@
+GET http://localhost:5001/users
+
+###
+GET http://localhost:5001/users/1
+
+###
+POST http://localhost:5001/users
+Content-Type: application/json
+
+{
+    "name":"jesen",
+    "email":"jsen@gmail.com",
+    "gender":"Male",
+    "umur":20,
+    "alamat":"sandona",
+    "hobi":"main game"
+}
+
+
+###
+PATCH http://localhost:5001/users/1
+Content-Type: application/json
+
+{
+    "name":"wilson",
+    "email":"wilson@gmail.com",
+    "gender":"Male",
+    "umur":19,
+    "alamat":"sandona",
+    "hobi":"main game"
+}
+
+###
+DELETE http://localhost:5001/users/2
+
